@@ -1,25 +1,14 @@
-// import { Button, Icon } from 'semantic-ui-react'
-import BasicLayout from "../layouts/BasicLayouts/BasicLayout"
+
+
+import BasicLayout from "@/Layouts/BasicLayout/BasicLayout";
+
 
 export default function Home() {
   return (
-
-
-      <main >
-        
-
-      
         <BasicLayout>
 
-          <h1>Estamos en la JOME</h1>
+          <h1>Estamos en la  H  OME</h1>
         </BasicLayout>
-
-        
-          
-
-          
-          
-      </main>
   
   )
 }

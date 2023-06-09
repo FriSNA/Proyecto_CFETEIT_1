@@ -1,0 +1,11 @@
+//Todo irá importado aquí, esto es el layout
+@import "./colors.scss";
+
+
+@import "/src/Layouts/BasicLayout/BasicLayout.scss";
+
+//Components:
+@import "../src/Components/Header/Header.scss";
+
+
+@import "../src/Components/Header/TopBar/TopBar.scss";
