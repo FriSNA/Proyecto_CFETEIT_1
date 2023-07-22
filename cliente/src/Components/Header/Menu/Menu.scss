@@ -11,6 +11,7 @@ border-radius: 0;
     padding: 0 !important;
     display: flex !important; 
     align-items: center;
+    
 
     .ui.menu {
         // border:0;
@@ -20,25 +21,33 @@ border-radius: 0;
     
     .icon{
         margin-right: 10px !important;
-        color: $primary;
+        color: green;
+        
+
     }
 
     .item {
-        color: $font-light;
+        // color: $font-light;
         border-radius: 0 !important;
+        // align-items: center;
+        
 
 
         &:hover {
             color: $font-light;
             background-color: $background-dark-absolute;
-        &:before{
+            
+        &::before{
             background-color: $background-dark-absolute;
+           
         }
         }
 
         &.m-0 i {
             margin: 0 !important;
         }
+
+
     }
     }
 }
@@ -46,6 +55,11 @@ border-radius: 0;
 &__right {
     display:flex;
     justify-content: flex-end ;
+
+    // .transparent-background {
+    //     background-color: transparent !important;
+    //   }
+      
 }
 
 }

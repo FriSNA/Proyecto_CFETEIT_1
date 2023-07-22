@@ -1,8 +1,15 @@
 .basic-layout {
     min-height: 100vh;
+    background-image: url(https://friscfe4.s3.us-east-2.amazonaws.com/static/047+bg-web.jpg) ;
+    background-size: cover;
+    background-position: center;
+   
     .content {
         background-color: $background-grey-light;
+    
+
         height: 100vh;
+
 
 
     }

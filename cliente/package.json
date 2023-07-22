@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "mongodb": "5.6",
     "next": "13.4.4",
     "node-sass": "^9.0.0",
     "react": "18.2.0",
@@ -17,5 +18,8 @@
     "sass": "^1.62.1",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4"
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
   }
 }
