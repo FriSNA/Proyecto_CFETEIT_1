@@ -13,3 +13,7 @@ let personaje = {
 
 console.log('Nombre: ', personaje);
  console.log('Nombre: ', personaje.nombre);
+
+ //No he avanzado en casa. 
+ let agua = 'agua';
+ 
