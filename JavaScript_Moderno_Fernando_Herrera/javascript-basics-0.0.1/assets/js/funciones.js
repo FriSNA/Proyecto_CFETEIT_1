@@ -65,3 +65,58 @@ console.log ('Función flecha resumida: ', sumarVarios_resumida(1,2,3,4,5)); //1
 
 const getaleatorio2 = () => Math.random();
 console.log(getaleatorio2());
+
+
+const numeros = [12, 34, 23, 50];
+const dobles = numeros.map(function(numero){
+    return console. log (numero *2);
+});
+
+//No se pueden ejecutar operaciones asíncronas dentro de map();
+
+
+const productos = [
+{id: 'asdnjf213', nombre : 'Camiseta', precio: 3000},
+{id: 'iuerwy832', nombre : 'trusa', precio: 200},
+{id: 'jnhoty890', nombre : 'Pantalón', precio: 8000},
+{id: 'jnhoty890', nombre : 'Traje', precio: 10000},
+{id: 'jskjdhbff', nombre : 'Calcetines', precio: 120},
+];
+
+const productosConDescuento= productos.map(function (producto){
+    if (producto.precio <1000) return producto;
+
+    return {
+        ...producto,
+        precio: producto.precio * 0.9
+    }
+});
+//Retorno temprano
+
+console.log(productosConDescuento); 
+
+
+const productosDescuento = productos.map(producto => producto.id); 
+   
+const productosDescuento2 = productos.map(({nombre})=> nombre); 
+
+console.log(productosDescuento); 
+console.log(productosDescuento2); 
+
+//método Filter
+
+const esBarato = producto => producto.precio <1000;
+const esCaro =producto => !esBarato(producto);
+const productosBaratos = productos.filter(esBarato);
+const productosCaros = productos.filter(esCaro);
+
+console.log(productosBaratos);
+console.log(productosCaros);
+
+const numerosS =[1,2,3,4,3,45,1,3,3,3];
+const numerosUnicos = numerosS.filter((numero, posicion, numeros) =>{
+return posicion === numerosS.indexOf(numero);
+});
+
+console.log(numerosUnicos);
+
